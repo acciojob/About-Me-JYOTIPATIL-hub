@@ -1,1 +1,8 @@
+.skill .percentage-bar {
+  background-color: #4CAF50; /* Green for strengths */
+}
+.skill.weak .percentage-bar {
+  background-color: #FF5722; /* Orange for weaknesses */
+}
+
 
