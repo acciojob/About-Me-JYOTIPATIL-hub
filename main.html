@@ -1,38 +1,139 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <!-- Include Bootstrap for easy styling and Font Awesome for icons -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        .skill-bar {
+            background-color: #e0e0e0;
+            border-radius: 20px;
+        }
+
+        .skill-level {
+            height: 20px;
+            background-color: #007bff;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            padding: 2px 0;
+        }
+
+        .icon {
+            font-size: 2rem;
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<section id="name">
-  <h1>Jyoti Patil</h1>
-</section>
-<section id="email">
-  <p>Email: <a href="mailto:your@email.com">jyotib1010@email.com</a></p>
-</section>
-<section id="profile">
-  <p>Applying for: Software Engineer</p>
-</section>
-<section id="about-me">
-  <p>I'm a passionate software developer with a love for clean code and problem-solving.</p>
-</section>
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skill">
-    <i class="fab fa-html5"></i> HTML <div class="percentage-bar" style="width: 80%;">80%</div>
-  </div>
-  <!-- Repeat for other skills -->
-</section>
-<section id="profile-picture">
-  <img src="your-profile-image.jpg" alt="Your Profile Picture">
-</section>
 
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container text-center">
+        <!-- Name Section -->
+        <section id="name">
+            <h2>Name</h2>
+            <p><strong>Jyoti Bhalachandra Patil</strong></p>
+            <img src="https://www.bing.com/ck/a?!&&p=ef82394df472cb28JmltdHM9MTcyODYwNDgwMCZpZ3VpZD0wZDBmZjEyOS0yMWNiLTZjZDAtM2QxNi1lMjllMjBhOTZkMDUmaW5zaWQ9NTU4Mg&ptn=3&ver=2&hsh=3&fclid=0d0ff129-21cb-6cd0-3d16-e29e20a96d05&u=a1L2ltYWdlcy9zZWFyY2g_cT1pbWFnZXMlMjBnaXJscyZGT1JNPUlRRlJCQSZpZD05Q0E3MUIwMzlGQzdGNTk5NTI5MTA5NDE3QURFQUUzRjUzODVBRjU1&ntb=1"alt="Your Profile Picture" class="profile-img">
+        </section>
+
+        <!-- Email Section -->
+        <section id="email">
+            <h2>Email</h2>
+            <p><a href="mailto:your@egmail.com">patiljyotib1010@gmail.com</a></p>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>Profile</h2>
+            <p>Front-end Developer / Data Scientist / Graphic Designer</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer with experience in front-end development, building intuitive user interfaces,
+                and working on various projects. I love learning new technologies and applying them to solve real-world
+                problems.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <!-- Skill 1: HTML -->
+            <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                    <span><i class="fab fa-html5 icon"></i> HTML</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;">90%</div>
+                </div>
+            </div>
+
+            <!-- Skill 2: CSS -->
+            <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                    <span><i class="fab fa-css3-alt icon"></i> CSS</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;">80%</div>
+                </div>
+            </div>
+
+            <!-- Skill 3: JavaScript -->
+            <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                    <span><i class="fab fa-js icon"></i> JavaScript</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;">75%</div>
+                </div>
+            </div>
+
+            <!-- Skill 4: React -->
+            <div class="mb-3">
+                <div class="d-flex justify-content-between">
+                    <span><i class="fab fa-react icon"></i> React</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;">70%</div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 </body>
 
 </html>
-
